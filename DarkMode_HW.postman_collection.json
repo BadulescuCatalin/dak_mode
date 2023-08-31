@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "08d5deab-4e76-41c0-9e8f-445e1576a856",
+		"name": "DarkMode_HW",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27081561"
+	},
+	"item": [
+		{
+			"name": "getAllCars",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "changeMode",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"darkMode\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/dark-mode",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"dark-mode"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addCar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Tesla\",\r\n    \"model\": \"Model 3\",\r\n    \"price\": \"$50000\",\r\n    \"year\": \"2023\",\r\n    \"enginePower\": \"283 hp (211 kW)\",\r\n    \"type\": \"manual\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/addCar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"addCar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invalidateCookie",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/coockie/invalidate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"coockie",
+						"invalidate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
